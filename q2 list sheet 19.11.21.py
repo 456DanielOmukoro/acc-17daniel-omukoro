@@ -1,24 +1,56 @@
-list=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-list2=[1,2,3,4,5]
-
-
-#del list[6]
-#print (list)
-
-
-#print (list.pop(9)
-#print (list.reverse())
-#print(list)
-
-#print(list.copy())
-#print(list)
-
-#print(list.sort())
-#print(list)
-#list2.sort(reverse=True)
-#print(list2)
+Default_list = ['a', 'b', 'c', 'd']
+Box = 1
+Board = 0
+# Menu
+while Box > Board:
+    print('''
+1. Append an element
+2. Insert an element
+3. Append a list to the given list
+4. Modify an existing element
+5. Delete an existing element from its position
+6. Delete an existing element with a given value
+7. Sort the list in the ascending order
+8. Sort the list in descending order
+9. Display the list. 
+''')
 
 
 
+user = int(input('Enter Your Choice From 1-9: '))
+print()
+
+if user < 0 or user > 9:
+    print('Error')
+
+elif user == 1:
+    
+    print('Option 1: Append an Element')
+    print()
 
 
+    user_append = input('Enter the element to be Appended to the List: ')
+    print('List before operation:' , Default_list)
+    Default_list.append(user_append)
+    print('List after operation: ' , Default_list)
+    
+   ''' 
+elif user == 2:
+    print('Option 2:Insert an element ')
+    print()
+    
+    user_insert = input('Enter the element to be inserted')
+    print('List before operation: ' , Default_list)
+    Default_list.insert(user_insert,Default_list)
+    print('List before operation: ' , Default_list)
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
