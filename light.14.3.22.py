@@ -1,0 +1,1 @@
+f = open('light.txt','a+')
