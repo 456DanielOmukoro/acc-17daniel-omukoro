@@ -1,0 +1,12 @@
+import csv
+f=open('data.csv','r')
+
+Data = list(csv.reader(f))
+#csv.reader(data)
+
+print(Data)
+
+
+for i in f:
+    if i==int:
+        print(i[3])
