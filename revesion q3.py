@@ -15,12 +15,20 @@ user=int(input('''
 2.Triangle:'''))
 
 
-L= int(input('Enter a number:'))
-
-print(user)
-
 if user==1:
-    int(input('What is the length of the side:'))
+    L=int(input('What is the length of the side:'))
 
-area=user**2
-print(user)
+    area=L**2
+    print(area)
+    
+elif user==2:
+    R=int(input('What is the base of the Triangle:'))
+    R=int(input('What is the height of the Triangle:'))
+    
+    area=R**2
+    print(area)
+    
+else:
+    print('Error')
+
+    
